@@ -17,16 +17,13 @@ public class HolaMundo {
         System.out.println("Ingrese Un numero porfavor");
         var entero = entrada.nextInt();
 
+        entrada.nextLine();
         System.out.println(entero);
-
-        entrada.close();
-
-        var nombre = new Scanner(System.in);
         System.out.print("Ingrese su nombre completo porfavor");
-        var completo = nombre.nextInt();
+        var completo = entrada.nextLine();
 
         System.out.println(completo);
 
-        nombre.close();
+        entrada.close();
     }
 } 
